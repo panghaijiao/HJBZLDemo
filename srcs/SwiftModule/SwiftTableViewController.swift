@@ -30,15 +30,12 @@ public class SwiftTableViewController : UIViewController {
     
     // MARK: View
     
-    private lazy var tableView: UITableView = {
-        let v = UITableView(frame: .zero, style: .plain)
+    private lazy var tableView = UITableView(frame: .zero, style: .plain).apply { v in
         v.backgroundColor = .clear
         v.delegate = self
         v.dataSource = self
         v.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-        return v
-    }()
-    
+    }
 }
 
 extension SwiftTableViewController : UITableViewDelegate {

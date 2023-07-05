@@ -62,6 +62,7 @@
 		1FA52FE22BB922DAD1048A87 /* DistinctUntilChanged.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96640C7A5AF230B876B36C96 /* DistinctUntilChanged.swift */; };
 		20519DC79DB59F916862CF58 /* CombineLatest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7DC67A550251B77928F6A0 /* CombineLatest.swift */; };
 		20FCF2AE6D6823CEAD482795 /* Buffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B73A5A2DF52EE021095680E /* Buffer.swift */; };
+		2197C3551BD9CDB0276E3FC7 /* SwiftStandard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88C219B5F7AEB16D9EC3003 /* SwiftStandard.swift */; };
 		219DB0FAF9EF8750B8D0D4F6 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AD9838FF9DD0BE026AAEAB /* Window.swift */; };
 		220D43360A435320E1392B86 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 164A13872D1BEE37967DC872 /* NSArray+MASAdditions.m */; };
 		22D500EF59C181CA1B843F2C /* Enumerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937B02427A81EFFBD07DB4FA /* Enumerated.swift */; };
@@ -685,6 +686,7 @@
 		E5A4CE895C6F502B61221DE0 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
 		E61313F97982198E4B65BC02 /* DispatchQueueConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DispatchQueueConfiguration.swift; path = "/private/var/tmp/_bazel_olinone/64ecea5e8afafa392ec667dc6e1f069a/rules_xcodeproj.noindex/build_output_base/external/rxswift~6.5.0/RxSwift/Schedulers/Internal/DispatchQueueConfiguration.swift"; sourceTree = "<absolute>"; };
 		E6EB4E97910DB1C050075346 /* app-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "app-Info.plist"; sourceTree = "<group>"; };
+		E88C219B5F7AEB16D9EC3003 /* SwiftStandard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftStandard.swift; sourceTree = "<group>"; };
 		E8CBE2C50A085134C69E1C45 /* Masonry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
 		E920F8C9B2E3E1E6686AA8A8 /* NSObject+Rx+KVORepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "NSObject+Rx+KVORepresentable.swift"; path = "/private/var/tmp/_bazel_olinone/64ecea5e8afafa392ec667dc6e1f069a/rules_xcodeproj.noindex/build_output_base/external/rxswift~6.5.0/RxCocoa/Foundation/NSObject+Rx+KVORepresentable.swift"; sourceTree = "<absolute>"; };
 		ECDF35DD3C0501FD443066AD /* app.rules_xcodeproj.c.compile.params */ = {isa = PBXFileReference; path = app.rules_xcodeproj.c.compile.params; sourceTree = "<group>"; };
@@ -780,6 +782,7 @@
 			isa = PBXGroup;
 			children = (
 				6B8CECBD38CF941E2A7F7C34 /* BUILD */,
+				E88C219B5F7AEB16D9EC3003 /* SwiftStandard.swift */,
 				1FA1BC1A8F95682F6224178B /* SwiftTableViewController.swift */,
 			);
 			path = SwiftModule;
@@ -2197,6 +2200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2197C3551BD9CDB0276E3FC7 /* SwiftStandard.swift in Sources */,
 				85C69987C5CEBC2E7CD1AB1C /* SwiftTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
