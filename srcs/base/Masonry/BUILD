@@ -19,7 +19,8 @@ filegroup(
 )
 
 objc_library(
-    name = "Masonry_library",    
+    name = "Masonry_library",
+    module_name = "Masonry",
     hdrs = glob(["Public/**/*.h"]),
     srcs = glob(["Masonry/**/*.m"]),
     copts = [

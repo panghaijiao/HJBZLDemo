@@ -14,6 +14,7 @@
 
 #import "AppDelegate.h"
 #import "srcs/MixModule/MainViewController.h"
+#import "srcs/MixModule/mix_module-Swift.h"
 
 @implementation AppDelegate
 

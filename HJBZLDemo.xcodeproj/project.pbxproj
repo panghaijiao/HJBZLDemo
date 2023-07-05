@@ -2506,6 +2506,7 @@
 				"C_PARAMS_FILE[sdk=iphoneos*]" = "$(CURRENT_EXECUTION_ROOT)/bazel-out/ios-arm64-min13.0-applebin_ios-ios_arm64-dbg-ST-d404b8004262/bin/srcs/base/Masonry/Masonry_library.rules_xcodeproj.c.compile.params";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				OTHER_CFLAGS = "$(ASAN_OTHER_CFLAGS__$(CLANG_ADDRESS_SANITIZER))";
+				PRODUCT_MODULE_NAME = Masonry;
 				PRODUCT_NAME = Masonry_library;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";

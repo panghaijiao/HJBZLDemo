@@ -17,13 +17,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor redColor];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    MixSwiftViewController *vc = [[MixSwiftViewController alloc] init];
+//    MixSwiftViewController *vc = [MixSwiftViewController new];
+    SwiftTableViewController *vc = [SwiftTableViewController new];
     [self presentViewController:vc animated:YES completion:nil];
 }
 

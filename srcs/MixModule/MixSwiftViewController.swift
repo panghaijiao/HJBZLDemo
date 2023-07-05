@@ -13,7 +13,7 @@ public class MixSwiftViewController : UIViewController {
     
     public override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.blue
+        view.backgroundColor = .green
     }
     
     public override func viewDidAppear(_ animated: Bool) {
