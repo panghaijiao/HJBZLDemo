@@ -13,22 +13,16 @@
 // limitations under the License.
 
 #import "AppDelegate.h"
-
-#import "UrlGetViewController.h"
+#import "FirstViewController.h"
 
 @implementation AppDelegate
 
-- (BOOL)application:(UIApplication *)application
-    didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
-  UITabBarController *bar = [[UITabBarController alloc] init];
-  [bar setViewControllers:
-      @[[[UrlGetViewController alloc] init]]];
-  bar.selectedIndex = 0;
-  self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-  self.window.rootViewController = bar;
-  [self.window makeKeyAndVisible];
-  return YES;
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[FirstViewController new]];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
+    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {}

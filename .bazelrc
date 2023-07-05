@@ -1,0 +1,4 @@
+common --enable_bzlmod
+common --registry=https://bcr.bilibili.co
+
+build --experimental_cc_implementation_deps

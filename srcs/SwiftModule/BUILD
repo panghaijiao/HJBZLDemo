@@ -1,11 +1,19 @@
-load("@rules_cc//cc:defs.bzl", "objc_library")
+load("@build_bazel_rules_swift//swift:swift.bzl", "swift_library")
 
-objc_library(
-    name = "UrlGetClasses",
-    srcs = [
-        "UrlGet/AppDelegate.m",
-        "UrlGet/UrlGetViewController.m",
-        "UrlGet/main.m",
+package(default_visibility = [
+    "//visibility:public"
+])
+
+swift_library(
+    name = "swift_module",
+    module_name = "SwiftModule",
+    copts = ["-no-warnings-as-errors"],
+    generates_header = True,
+    srcs = glob([
+        "**/*.swift",
+    ]),
+    deps = [
+        "//srcs/base/Masonry:Masonry_library",
+        "@rxswift//:RxCocoa",
     ],
-    hdrs = glob(["UrlGet/*.h"]),
 )

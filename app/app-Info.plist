@@ -5,15 +5,15 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>ios-app</string>
+	<string>HJBZLDemo</string>
 	<key>CFBundleExecutable</key>
-	<string>ios-app</string>
+	<string>HJBZLDemo</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.olinone</string>
+	<string>com.olinone.HJBZLDemo</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>ios-app</string>
+	<string>HJBZLDemo</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>

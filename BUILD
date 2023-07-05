@@ -7,36 +7,38 @@ load(
 
 objc_library(
     name = "app",
-    srcs = [
-         "app/AppDelegate.m",
-         "app/UrlGetViewController.m",
-         "app/main.m",
-    ],
+    srcs = glob([
+        "app/**/*.m",
+    ]),
     hdrs = glob(["app/*.h"]),
+    deps = [
+        "//srcs/OCModule:oc_module",
+        "//srcs/SwiftModule:swift_module",
+    ],
 )
 
 ios_application(
-    name = "ios-app",
-    bundle_id = "com.olinone",
+    name = "HJBZLDemo",
+    bundle_id = "com.olinone.HJBZLDemo",
     families = [
         "iphone"
     ],
     infoplists = [":app/app-Info.plist"],
-    launch_storyboard = "app/UrlGetViewController.xib",
+    launch_storyboard = "app/LaunchScreen.storyboard",
     minimum_os_version = "13.0",
+    provisioning_profile = "App_custom.mobileprovision",
     visibility = ["//visibility:public"],
     deps = [
         ":app",
-        "//srcs/OCModule:oc_module",
     ],
 )
 
 xcodeproj(
     name = "xcodeproj",
     build_mode = "bazel",
-    project_name = "ios-app",
+    project_name = "HJBZLDemo",
     tags = ["manual"],
     top_level_targets = [
-        ":ios-app",
+        top_level_target(":HJBZLDemo", target_environments = ["device", "simulator"]),
     ],
 )
