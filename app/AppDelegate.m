@@ -13,12 +13,12 @@
 // limitations under the License.
 
 #import "AppDelegate.h"
-#import "FirstViewController.h"
+#import "srcs/MixModule/MainViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[FirstViewController new]];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[MainViewController new]];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];

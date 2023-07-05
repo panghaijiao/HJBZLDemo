@@ -1,18 +1,19 @@
 //
-//  FirstViewController.m
+//  MainViewController.m
 //  app
 //
 //  Created by olinone on 2023/7/5.
 //
 
-#import "FirstViewController.h"
+#import "MainViewController.h"
 #import "srcs/SwiftModule/swift_module-Swift.h"
+#import "srcs/MixModule/mix_module-Swift.h"
 
-@interface FirstViewController ()
+@interface MainViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation MainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,7 +23,7 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    SwiftTableViewController *vc = [[SwiftTableViewController alloc] init];
+    MixSwiftViewController *vc = [[MixSwiftViewController alloc] init];
     [self presentViewController:vc animated:YES completion:nil];
 }
 

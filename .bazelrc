@@ -2,3 +2,10 @@ common --enable_bzlmod
 common --registry=https://bcr.bilibili.co
 
 build --experimental_cc_implementation_deps
+
+build --verbose_failures
+build --announce_rc
+build --apple_platform_type=ios
+build --show_progress_rate_limit=5
+build --output_filter=^$
+build --ios_minimum_os=11.0

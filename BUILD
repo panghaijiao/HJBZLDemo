@@ -12,8 +12,7 @@ objc_library(
     ]),
     hdrs = glob(["app/*.h"]),
     deps = [
-        "//srcs/OCModule:oc_module",
-        "//srcs/SwiftModule:swift_module",
+        "//srcs/MixModule:mix_module"
     ],
 )
 

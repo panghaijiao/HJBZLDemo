@@ -1,16 +1,18 @@
 load("@rules_cc//cc:defs.bzl", "objc_library")
+load("@build_bazel_rules_apple//apple:apple.bzl", "experimental_mixed_language_library")
 
-package(default_visibility = ["//visibility:public"])
+package(default_visibility = [
+    "//visibility:public"
+])
 
-objc_library(
-    name = "oc_module",
-    module_name = "OCModule",
+experimental_mixed_language_library(
+    name = "mix_module",
     hdrs = glob([
         "**/*.h",
     ]),
     srcs = glob([
-        "**/*.h",
         "**/*.m",
+        "**/*.swift",
     ]),
     deps = [
         "//srcs/base/Masonry:Masonry_library",
