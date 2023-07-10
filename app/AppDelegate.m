@@ -13,8 +13,8 @@
 // limitations under the License.
 
 #import "AppDelegate.h"
-#import "srcs/MixModule/MainViewController.h"
-#import "srcs/MixModule/mix_module-Swift.h"
+#import "srcs/MixModule/MixModule-Swift.h"
+#import <MixModule/MainViewController.h>
 
 @implementation AppDelegate
 

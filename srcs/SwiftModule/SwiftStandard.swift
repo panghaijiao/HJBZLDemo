@@ -13,14 +13,9 @@ protocol ScopeFunc {
 
 extension ScopeFunc {
     @inline(__always)
-    func with<T>(_ this: T, block: (T) -> () -> T) -> T {
-        block(this)()
-    }
-    
-    @inline(__always)
-    func apply(block: (Self) -> Void) -> Self {
-        block(self)
-        return self
+    func with<T>(_ it: T, block: (T) -> ()) -> T {
+        block(it)
+        return it
     }
 
     @inline(__always)

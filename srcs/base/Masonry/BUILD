@@ -1,6 +1,8 @@
 load("@rules_cc//cc:defs.bzl", "objc_library")
 
-package(default_visibility = ["//visibility:public"])
+package(default_visibility = [
+    "//visibility:public"
+])
 
 filegroup(
     name = "package-srcs",

@@ -13,4 +13,4 @@ bazel_dep(name = "rules_xcodeproj", version = "1.6.0")
 
 
 #lib
-bazel_dep(name = "rxswift", version = "6.5.0")
+# bazel_dep(name = "rxswift", version = "6.5.0")

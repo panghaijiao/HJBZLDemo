@@ -7,6 +7,7 @@ package(default_visibility = [
 
 experimental_mixed_language_library(
     name = "mix_module",
+    module_name = "MixModule",
     hdrs = glob([
         "**/*.h",
     ]),
@@ -14,8 +15,13 @@ experimental_mixed_language_library(
         "**/*.m",
         "**/*.swift",
     ]),
+    objc_copts = [
+        "-iquote srcs/MixModule/include/MixModule",
+    ],
     deps = [
         "//srcs/base/Masonry:Masonry_library",
         "//srcs/SwiftModule:swift_module",
+        "//srcs/OCModule:oc_module",
     ],
+    includes = ["include"],
 )

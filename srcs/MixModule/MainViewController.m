@@ -1,13 +1,15 @@
 //
 //  MainViewController.m
-//  app
+//  HJBZLDemo
 //
 //  Created by olinone on 2023/7/5.
 //
 
 #import "MainViewController.h"
 #import "srcs/SwiftModule/swift_module-Swift.h"
-#import "srcs/MixModule/mix_module-Swift.h"
+#import "srcs/MixModule/MixModule-Swift.h"
+#import <Masonry/Masonry.h>
+#import <OCModule/OCModule.h>
 
 @interface MainViewController ()
 
@@ -23,7 +25,7 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-//    MixSwiftViewController *vc = [MixSwiftViewController new];
+    MixSwiftViewController *swiftVC = [MixSwiftViewController new];
     SwiftTableViewController *vc = [SwiftTableViewController new];
     [self presentViewController:vc animated:YES completion:nil];
 }

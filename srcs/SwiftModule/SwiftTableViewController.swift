@@ -22,15 +22,15 @@ public class SwiftTableViewController : UIViewController {
     
     private func setupUI() {
         view.addSubview(tableView)
-        if let maker = tableView.mas_makeConstraints() {
+        tableView.mas_makeConstraints().let(block: { maker in
             maker.edges.mas_equalTo()(self.view)
             maker.install()
-        }
+        })
     }
     
     // MARK: View
     
-    private lazy var tableView = UITableView(frame: .zero, style: .plain).apply { v in
+    private lazy var tableView = UITableView(frame: .zero, style: .plain).also { v in
         v.backgroundColor = .clear
         v.delegate = self
         v.dataSource = self

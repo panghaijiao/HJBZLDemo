@@ -14,6 +14,6 @@ swift_library(
     ]),
     deps = [
         "//srcs/base/Masonry:Masonry_library",
-        "@rxswift//:RxCocoa",
+        # "@rxswift//:RxCocoa",
     ],
 )

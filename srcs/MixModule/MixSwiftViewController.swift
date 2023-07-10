@@ -18,7 +18,7 @@ public class MixSwiftViewController : UIViewController {
     
     public override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-
+        
     }
     
 }
